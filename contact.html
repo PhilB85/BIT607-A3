@@ -4,36 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snazzy Paws Grooming | Contact</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header and navigation -->
   <header>
-    <nav>
-      <h1>Snazzy Paws Grooming</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Snazzy Paws Grooming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Main content -->
-  <main>
+  <main class="container py-4">
     <section>
-      <h2>Contact Us</h2>
-      <p>We'd love to hear from you. Please fill out the form below or visit us at our salon.</p>
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center">We'd love to hear from you. Please fill out the form below or visit us at our salon.</p>
 
       <!-- Google Map embed -->
-      <div style="margin-bottom: 20px;">
+      <div class="mb-4 text-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.6191537439854!2d173.82250707676428!3d-41.51252725434584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d396935997cd0a5%3A0x7a531a1669fa1173!2s28%20Clyde%20Street%2C%20Renwick%207204!5e0!3m2!1sen!2snz!4v1751949921540!5m2!1sen!2snz"
-          width="600"
+          width="100%"
           height="300"
-          style="border:0; width:100%; max-width:600px;"
+          style="border:0; max-width: 600px;"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -42,27 +53,38 @@
       </div>
 
       <!-- Contact form -->
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <form class="mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required />
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
 
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" required></textarea>
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" class="form-control" required></textarea>
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-warning w-100">Submit</button>
       </form>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="bg-warning text-center py-3">
     <p>Opening Hours: Monday - Saturday, 9am - 5pm</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
